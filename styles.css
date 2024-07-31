@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--primary);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root {
+    --primary:#f9fafb;
+    --secondary:#0369a1;
+    --third:#0a0a0a;
+    --fourth:#f1f5f9;
+}
+
+.body{
+    background-color: var(--primary);
+}
+
+.haut{
+    height: 15vh;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+.haut h1{
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.haut p{
+    font-size: larger;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    max-width: 120px;
+}
+
+.btn a{
+    color: var(--third);
+}
+
+/* Section Hero */
+.hero{
+    height: 100%;
+    background-color: var(--third);
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    gap: 200px;
+}
+
+.arrivals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+}
+
+.arrivals h1{
+    font-size: 80px;
+    font-weight: bolder;
+}
+.arrivals p{
+    text-align: justify;
+}
+
+.picture img{
+    max-width: 500px;
+} 
+
+/* Section brand */
+.brand{
+    height: 100%;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.brand img{
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+}
+
+.logo{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+/* section gender */
+.category{
+    height: 100%;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.cat{
+    background-color: var(--fourth);
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px; 
+    width: 500px;
+}
+
+.title{
+    cursor: pointer;
+}
+
+.title h2{
+    color: var(--secondary);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.title h3{
+    color: var(--secondary);
+    color: #0284c7;
+    font-size: 40px;
+}
+
+.cat-pic img{
+    max-width: 300px;
+    height: 300px;
+}
+
+.footer{
+    height: 10vh;
+    background-color: var(--secondary);
+}
+
+/* Requêtes media queries */
+@media screen and (max-width: 1159px){
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 1275px){
+
+    .category{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .brand{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .haut{
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    *{
+        width: 100%;
+        text-align: center;
+    }
+
+    .haut{
+        flex-direction: column;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .hero h1{
+        padding: 20px;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    .hero p{
+        padding: 0 20px;
+    }
+
+    .arrivals{
+        align-items: center;
+    }
+
+    .arrivals p{
+        max-width: 400px;
+    }
+
+    .cat{
+        flex-direction: column;
+    }
+}
