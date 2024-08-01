@@ -28,6 +28,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 35px;
+    width: 100%;
 }
 
 .haut h1{
@@ -41,19 +42,20 @@
     cursor: pointer;
 }
 
-.btn{
-    padding: 10px 20px;
-    font-weight: bolder;
-    border: none;
-    border-radius: 3px;
-    max-width: 120px;
+.navbar {
+    position: absolute;
+    background-color: var(--secondary);
 }
 
-.btn a{
-    color: var(--third);
+.navbar-text,
+.navbar-brand,
+.nav-link {
+    color: var(--primary) !important;
 }
 
 /* Section Hero */
+
+
 .hero{
     height: 100%;
     background-color: var(--third);
@@ -63,12 +65,26 @@
     gap: 200px;
 }
 
+.btn{
+    padding: 10px 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    max-width: 120px;
+}
+
 .arrivals{
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 800px;
 }
+
+.arrivals .btn{
+    color: var(--third);
+    background-color: var(--primary);
+}
+
 
 .arrivals h1{
     font-size: 80px;
@@ -172,6 +188,7 @@
     .haut{
         flex-direction: column;
         padding: 10px;
+        height: 100%;
     }
 }
 
@@ -180,6 +197,7 @@
         width: 100%;
         text-align: center;
     }
+
 
     .haut{
         flex-direction: column;
